@@ -1,0 +1,11 @@
+{
+  "name": "Go Web Server Development",
+  "image": "golang:1.22",
+  "forwardPorts": [
+    8080
+  ],
+  "postCreateCommand": "go mod tidy",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/go_Application,type=bind,consistency=cached",
+  "workspaceFolder": "/workspaces/go_Application",
+  "remoteUser": "vscode"
+}
